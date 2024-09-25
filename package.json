@@ -29,11 +29,11 @@
     "access": "public"
   },
   "scripts": {
-    "prebuild": "npm run clean",
+    "prebuild": "yarn clean",
     "build": "npx tsc -p .",
     "clean": "rm -rf dist",
     "lint": "npx eslint . --ext .ts,.tsx",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "yarn lint -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "npx prettier --write 'src/**/*.ts*'"
   },
